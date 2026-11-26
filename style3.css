@@ -1,0 +1,495 @@
+/* INTERNATIONAL TOUR BANNER */
+.international-banner {
+    height: 375px;
+    position: relative;
+    padding: 40px;
+    color: white;
+    background:
+        linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.15)),
+        url("qt0.jpg")
+        center 45% / cover no-repeat;
+}
+
+.international-banner .banner-content h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+.international-banner .banner-content h1 {
+    font-size: 76px;
+    margin: 5px 0;
+}
+
+.international-banner .banner-content h1 span {
+    color: #f28a18;
+}
+
+.international-banner .banner-content p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.header nav a.selected {
+    background: #3924c5;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.international-banner .search-box {
+    position: absolute;
+    left: 9%;
+    bottom: 20px;
+    width: 82%;
+    min-height: 60px;
+    background: white;
+    padding: 8px 15px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.international-banner .search-box input,
+.international-banner .search-box select {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 8px;
+    border: none;
+    outline: none;
+    color: #555;
+}
+
+.international-banner .search-box button {
+    background: #f39819;
+    color: white;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.sidebar a {
+    font-size: 19px;
+}
+
+.tour-card {
+    position: relative;
+}
+
+.tour-tag {
+    display: inline-block;
+    background: #f39819;
+    color: white;
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 15px;
+    margin-bottom: 7px;
+}
+
+.tour-tag.discount {
+    background: #3924c5;
+}
+
+.tour-info h3 {
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 22px;
+}
+
+.tour-info p {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.tour-bottom b {
+    font-size: 12px;
+    color: #d88b20;
+}
+
+.tour-bottom button {
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .international-banner {
+        height: 350px;
+    }
+
+    .tour-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .international-banner {
+        height: 400px;
+        padding: 30px 20px;
+    }
+
+    .international-banner .banner-content h2 {
+        font-size: 25px;
+    }
+
+    .international-banner .banner-content h1 {
+        font-size: 50px;
+    }
+
+    .international-banner .search-box {
+        left: 5%;
+        width: 90%;
+        flex-wrap: wrap;
+        border-radius: 15px;
+    }
+
+    .international-banner .search-box input,
+    .international-banner .search-box select {
+        flex: 1 1 40%;
+    }
+
+    .tour-section {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .tour-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .tour-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== TOUR INTERNATIONAL LAYOUT ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+/* HEADER */
+.header {
+    height: 65px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #2675b9;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #f28b18;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.header nav a.selected {
+    background: #3924c5;
+    color: white;
+    padding: 10px 17px;
+    border-radius: 20px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons button {
+    background: #f39819;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+/* BANNER */
+.international-banner {
+    height: 360px;
+    padding: 35px 40px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.international-banner .banner-content h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.international-banner .banner-content h1 {
+    font-size: 70px;
+    margin: 10px 0;
+}
+
+/* SEARCH */
+.international-banner .search-box {
+    height: 60px;
+    bottom: 18px;
+    left: 9%;
+    width: 82%;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    background: white;
+    padding: 8px 15px;
+}
+
+/* MAIN TOUR SECTION */
+.tour-section {
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 235px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 100%;
+    background: #f8f9fc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    color: #263c78;
+    margin: 5px 0 15px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 12px;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+.sidebar a.active {
+    background: #3924c5;
+    color: white;
+}
+
+/* TOUR CONTENT */
+.tour-content {
+    width: 100%;
+    min-width: 0;
+}
+
+.tour-content > h2 {
+    font-size: 25px;
+    color: #263c78;
+    margin: 0 0 12px;
+    font-family: Georgia, serif;
+}
+
+/* 4 COLUMNS x 2 ROWS */
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    width: 100%;
+}
+
+/* TOUR CARD */
+.tour-card {
+    width: 100%;
+    min-width: 0;
+    background: white;
+    border: 1px solid #eeeeee;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.07);
+}
+
+/* TOUR IMAGE */
+.tour-card img {
+    display: block;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 10px;
+}
+
+.tour-info h3 {
+    font-size: 13px;
+    min-height: 32px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.tour-info p {
+    font-size: 11px;
+    margin: 6px 0;
+    color: #666;
+}
+
+.tour-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 12px;
+}
+
+.tour-bottom b {
+    font-size: 11px;
+    color: #e28b18;
+}
+
+.tour-bottom button {
+    background: #f39819;
+    color: white;
+    border: none;
+    padding: 7px 9px;
+    border-radius: 15px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+/* BENEFITS */
+.benefits {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background: #e6f4fc;
+    border-radius: 12px;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.benefit span {
+    font-size: 30px;
+    color: #3199ce;
+}
+
+.benefit p {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+.footer {
+    background: #24158b;
+    color: white;
+    padding: 35px 30px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1.2fr;
+    gap: 20px;
+}
+
+.footer h2 {
+    color: white;
+}
+
+.footer p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .tour-section {
+        grid-template-columns: 180px 1fr;
+    }
+
+    .tour-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header nav {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .header nav {
+        flex-wrap: wrap;
+    }
+
+    .tour-section {
+        display: block;
+    }
+
+    .sidebar {
+        margin-bottom: 20px;
+    }
+
+    .tour-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

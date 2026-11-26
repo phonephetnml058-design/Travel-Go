@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Khám phá thế giới</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">✈ Travel<span>Go</span></div>
+
+    <nav>
+        <a href="index.html">⌂ Trang chủ</a>
+        <a href="#">Tour trong nước</a>
+        <a href="#">Tour quốc tế</a>
+        <a href="#">Ưu đãi</a>
+        <a href="#">Giới thiệu</a>
+    </nav>
+
+    <div class="header-icons">
+        <span>⌕</span>
+        <span>♙</span>
+        <button>ĐĂNG NHẬP</button>
+    </div>
+</header>
+<section class="banner">
+    <div class="banner-content">
+        <h2>Khám phá thế giới cùng</h2>
+        <h1>Travel<span>Go</span></h1>
+        <p>
+            Trải nghiệm những chuyến đi tuyệt vời<br>
+            với TravelGo và khám phá thế giới!
+        </p>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="destination"
+               placeholder="📍 Nhập địa điểm muốn đến">
+
+        <input type="date" id="date">
+
+        <select id="people">
+            <option value="1">1 khách</option>
+            <option value="2">2 khách</option>
+            <option value="3">3 khách</option>
+            <option value="4">4 khách</option>
+            <option value="5">5 khách</option>
+        </select>
+
+        <button onclick="searchTour()">🔍 Tìm kiếm</button>
+    </div>
+</section>
+<main class="tour-section">
+
+
+    <aside class="sidebar">
+        <h2>📍 Danh mục tour</h2>
+        <a href="#" class="active">⌂ Miền Bắc</a>
+        <a href="#">🏛 Miền Trung</a>
+        <a href="#">🌴 Miền Nam</a>
+        <a href="#">🏖 Tour nghỉ dưỡng</a>
+        <a href="#">🧭 Tour khám phá</a>
+        <a href="#">⭐ Tour lễ hội</a>
+    </aside>
+
+    <section class="tour-content">
+        <h2>Tour trong nước</h2>
+
+        <div class="tour-grid">
+
+            <div class="tour-card">
+                <img src="HL.jpg" alt="Hạ Long">
+                <div class="tour-info">
+                    <h3>Hạ Long - Quảng Ninh</h3>
+                    <p>⭐ 4.8 đánh giá | ⏰ 2 ngày 1 đêm</p>
+                    <div class="tour-bottom">
+                        <b>2.290.000đ</b>
+                        <button>Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="DN.jpg" alt="Đà Nẵng">
+                <div class="tour-info">
+                    <h3>Đà Nẵng - Hội An - Bà Nà Hills</h3>
+                    <p>⭐ 4.9 đánh giá | ⏰ 3 ngày 2 đêm</p>
+                    <div class="tour-bottom">
+                        <b>3.490.000đ</b>
+                        <button>Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="SP.jpg" alt="Sapa">
+                <div class="tour-info">
+                    <h3>Sapa - Fansipan</h3>
+                    <p>⭐ 4.7 đánh giá | ⏰ 3 ngày 2 đêm</p>
+                    <div class="tour-bottom">
+                        <b>2.990.000đ</b>
+                        <button>Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="NB.jpg" alt="Ninh Bình">
+                <div class="tour-info">
+                    <h3>Ninh Bình - Tràng An</h3>
+                    <p>⭐ 4.8 đánh giá | ⏰ 2 ngày 1 đêm</p>
+                    <div class="tour-bottom">
+                        <b>1.990.000đ</b>
+                        <button>Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="PQ.jpg" alt="Phú Quốc">
+                <div class="tour-info">
+                    <h3>Phú Quốc - Thiên đường biến đảo</h3>
+                    <p>⭐ 4.9 đánh giá | ⏰ 4 ngày 3 đêm</p>
+                    <div class="tour-bottom">
+                        <b>5.490.000đ</b>
+                        <button>Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="DL.jpg" alt="Đà Lạt">
+                <div class="tour-info">
+                    <h3>Đà Lạt - Thành phố ngàn hoa</h3>
+                    <p>⭐ 4.7 đánh giá | ⏰ 3 ngày 2 đêm</p>
+                    <div class="tour-bottom">
+                        <b>2.890.000đ</b>
+                        <button>Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="H.jpg" alt="Huế">
+                <div class="tour-info">
+                    <h3>Huế - Di sản văn hóa</h3>
+                    <p>⭐ 4.8 đánh giá | ⏰ 4 ngày 3 đêm</p>
+                    <div class="tour-bottom">
+                        <b>3.890.000đ</b>
+                        <button>Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-card">
+                <img src="TN.jpg" alt="Tây Ninh">
+                <div class="tour-info">
+                    <h3>Tây Ninh - Núi Bá Đen</h3>
+                    <p>⭐ 4.7 đánh giá | ⏰ 2 ngày 1 đêm</p>
+                    <div class="tour-bottom">
+                        <b>1.690.000đ</b>
+                        <button>Chi tiết</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<section class="benefits">
+
+    <div class="benefit">
+        <span>✈</span>
+        <p>Đặt tour dễ dàng<br>chỉ vài bước đơn giản</p>
+    </div>
+
+    <div class="benefit">
+        <span>🛡</span>
+        <p>Thanh toán an toàn<br>bảo mật tuyệt đối</p>
+    </div>
+
+    <div class="benefit">
+        <span>🎧</span>
+        <p>Hỗ trợ 24/7<br>luôn đồng hành cùng bạn</p>
+    </div>
+
+    <div class="benefit">
+        <span>🎁</span>
+        <p>Nhiều ưu đãi hấp dẫn<br>Tiết kiệm hơn mỗi chuyến đi</p>
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="footer-logo">
+        <h2>✈ TravelGo</h2>
+        <p>Đồng hành cùng bạn trên mọi hành trình!</p>
+    </div>
+
+    <div>
+        <h3>☎ Hotline</h3>
+        <p>1900 1234</p>
+    </div>
+
+    <div>
+        <h3>✉ Email</h3>
+        <p>support@travelgo.vn</p>
+    </div>
+
+    <div>
+        <h3>📍 Địa chỉ</h3>
+        <p>123 Nguyễn Văn Cừ, Hà Nội</p>
+    </div>
+
+</footer>
+
+<script src="java2.js"></script>
+</body>
+</html>
